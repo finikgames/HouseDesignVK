@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "848279889788",
+    "project_id": "home-design-match-3-games",
+    "storage_bucket": "home-design-match-3-games.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:848279889788:android:86cbd25207d136e296a6f9",
+        "android_client_info": {
+          "package_name": "com.finik.homedesign"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "848279889788-66rpkp8a2htkjbsr74v6q49eo1i63psb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzX9u8MFMb8PusbfC5YEydqLSG4FqTymw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "848279889788-66rpkp8a2htkjbsr74v6q49eo1i63psb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
