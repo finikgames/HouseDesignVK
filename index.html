@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
   <title>Home Design</title>
 </head>
 
@@ -39,9 +40,11 @@
                 alert(message);
             });
         }, 500); // Wait half a second before loading. Makes page more responsive on reload.
+        jQuery(document).ready(function($) // страница прогружена
+    		{
+    			vkBridge.send('VKWebAppInit');
+    		});
     </script>
-    <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
-    <script>vkBridge.send('VKWebAppInit');</script>
 </body>
 
 </html>
