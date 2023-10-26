@@ -40,10 +40,19 @@
                 alert(message);
             });
         }, 500); // Wait half a second before loading. Makes page more responsive on reload.
-        jQuery(document).ready(function($) // страница прогружена
-    		{
-    			vkBridge.send('VKWebAppInit');
-    		});
+      
+        bridge.send('VKWebAppInit')
+        .then((data) => { 
+          if (data.result) {
+            // Приложение инициализировано
+          } else {
+            // Ошибка
+          }
+        })
+        .catch((error) => {
+          // Ошибка
+          console.log(error);
+        });
     </script>
 </body>
 
