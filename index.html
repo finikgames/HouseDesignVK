@@ -16,7 +16,7 @@
 
     <div id="progress-bar" style="position: absolute; left: 0%; right: 100%; top: 49%; bottom: 49%; background-color: white;"></div>
 
-    <script src="Build/VkBuild.loader.js"></script>
+    
     <script>
         const settings = {
             dataUrl: "Build/79f4cbf7e70edd171a76865ab982527f.data.unityweb",
@@ -42,19 +42,12 @@
             });
         }, 500); // Wait half a second before loading. Makes page more responsive on reload.
       
-        bridge.send('VKWebAppInit')
-        .then((data) => { 
-          if (data.result) {
-            // Приложение инициализировано
-          } else {
-            // Ошибка
-          }
-        })
-        .catch((error) => {
-          // Ошибка
-          console.log(error);
-        });
+      jQuery(document).ready(function($) // страница прогружена
+  		{
+  			vkBridge.send('VKWebAppInit');
+  		});
     </script>
+    <script src="Build/VkBuild.loader.js"></script>
 </body>
 
 </html>
